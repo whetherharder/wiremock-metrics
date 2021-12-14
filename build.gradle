@@ -9,13 +9,8 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven {
-            name = "GitHubPackages"
-            url = uri("https://oss.sonatype.org/")
-            
-        }
-    }
 }
+
 
 dependencies {
     implementation 'io.micrometer:micrometer-registry-prometheus:latest.release'

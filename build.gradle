@@ -9,6 +9,12 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+            name = "GitHubPackages"
+            url = uri("https://oss.sonatype.org/")
+            
+        }
+    }
 }
 
 dependencies {

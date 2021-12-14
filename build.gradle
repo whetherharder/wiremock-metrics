@@ -13,6 +13,9 @@ repositories {
 tasks.withType(JavaCompile) {
     options.deprecation = true
 }
+tasks.withType(Copy){
+    duplicatesStrategy 'exclude'
+}
 
 dependencies {
     implementation 'io.micrometer:micrometer-registry-prometheus:latest.release'

@@ -60,7 +60,7 @@ public class MetricsRegistry {
 						.description("Measuring requests latencies in ms")
 						.baseUnit("ms")
 						.tags("path", path, "method", method, "status", String.valueOf(status))
-						.sla(3,15,50,200,1000,3000, 10000, 20000, 50000)
+						.serviceLevelObjectives(3,15,50,200,1000,3000, 10000, 20000, 50000)
 						.register(registry);
 				}
 			}

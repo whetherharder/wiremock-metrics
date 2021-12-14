@@ -32,6 +32,7 @@ task fatJar(type: Jar) {
 }
 
 tasks.register('uberJar', Jar) {
+    duplicatesStrategy 'exclude'
     archiveClassifier = 'uber'
 
     from sourceSets.main.output

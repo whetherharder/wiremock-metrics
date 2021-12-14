@@ -21,7 +21,7 @@ dependencies {
     implementation 'io.micrometer:micrometer-registry-prometheus:latest.release'
     compileOnly group: 'com.github.tomakehurst', name: 'wiremock-jre8', version: "$WIREMOCK_VERSION"
 
-    testImplementation group: 'com.github.tomakehurst', name: 'wiremock-jre8', version: "$MICROMETER_VERSION"
+    testImplementation group: 'com.github.tomakehurst', name: 'wiremock-jre8', version: "$WIREMOCK_VERSION"
     testImplementation group: 'junit', name: 'junit', version: "$JUNIT_VERSION"
 }
 
